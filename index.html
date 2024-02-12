@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SKN</title>
+  <link rel="icon" href="https://www.pngmart.com/files/13/Facial-Mask-Transparent-PNG.png">
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <h1>Home</h1>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="quiz.html">
+          Take the Quiz!
+        </a>
+        <a class="navbar-item" href="myths.html">
+          Myths and More Info
+        </a>
+        <a class="navbar-item" href="products2.html">
+          Product Page
+        </a>
+        <a class="navbar-item" href="about.html">
+          About Us
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero is-large has-background-danger-light has-text-centered">
+    <div class="bg-img">
+      <div class="hero-body">
+        <p class="title">SKN by Ctrl CeraVe</p>
+        <p class="subtitle">Dealing with skin is difficult. Let us help you find your skin-type and present catered
+          products within your ideal budget!</p>
+      </div>
+    </div>
+  </section>
+
+  <!--Take the Quiz Button-->
+  <section class="hero has-text-centered">
+    <div class="hero-body">
+      <h1>Click here to find your skin-type:</h1>
+      <button class="button is-large is-responsive"> <a href="quiz.html">Take Quiz!</a></button>
+
+    </div>
+  </section>
+
+
+  <!--About the creators section-->
+  <section class="hero">
+    <section class="hero-body" <div class="container">
+      <section class="aboutus">
+        <h1 class="title">Background</h1>
+        <h2 class="subtitle">
+          SKN was created summer of 2022 by a team of CSSI students, Ctrl CeraVe, to relieve the struggle of navigating
+          skincare. Our collective passion for skincare and computer science led us to create SKN to share our love and
+          knowledge to hopefully help those starting their journey. Click on the <a href="about.html">About Us</a> page
+          to find out more about the creators!
+        </h2>
+      </section>
+    </section>
+  </section>
+
+  <section class="hero has-text-centered">
+    <script>
+      var popp;
+      function popuptime() {
+        popp = window.open('', 'popup', 'height = 500, width = 500, top = 200, left = 200, scrollbar=yes, menubar=yes, toolbar=yes')
+        popp.document.write('<html>\n<head>\n')
+        popp.document.write('<title>Subscribe</title>\n')
+        popp.document.write('</head>\n')
+        popp.document.write('<body>\n')
+        popp.document.bgColor = "#B4CFEC";
+        popp.document.fgColor = "#B2AC88";
+        popp.document.write('<h1>Enter your email below to subscribe for more helpful articles + products!</h1>\n')
+
+popp.document.write('<input <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1i54bWdUqjdI3lLSYrP_JaI2JH2bRjgUC7W34xpwbFAavDg/viewform?embedded=true" width="640" height="439" frameborder="0" marginheight="0" marginwidth="0"></iframe>\n')
+        
+        popp.document.write('<input type=button class = "button is-large is-responsive" value="Submit" onClick="window.close();">\n')
+        popp.document.write('</form>\n')
+        popp.document.write('</body>\n')
+        popp.document.write('</html>')
+        popp.document.close()
+      }
+    </script>
+
+    <input type=button class="button is-large is-responsive" value="Subscribe!" onClick='popuptime();'>
+  </section>
+
+</body>
+
+
+<footer class="footer has-background-danger-light">
+  <div class="content has-text-centered">
+    <p class="subtitle">Disclaimer‼️ We are not licensed professionals. We are here to share our passion for skincare
+      and hope you find our site helpful. -SKN Team ^_^</p>
+  </div>
+</footer>
+
+</html>

@@ -1,0 +1,2681 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+  <title>Products Page</title>
+    <link rel="icon" href="https://www.pngmart.com/files/13/Facial-Mask-Transparent-PNG.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="products2.js" defer></script>
+  <link rel='stylesheet'
+    href='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/css/OverlayScrollbars.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.9.0-->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/bulma-modal-fx/dist/css/modal-fx.min.css" />
+  <style>
+    .columns:nth-child(2) {
+      margin-top: -10rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <h1>Home</h1>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="quiz.html">
+          Take the Quiz!
+        </a>
+        <a class="navbar-item" href="myths.html">
+          Myths and More Info
+        </a>
+        <a class="navbar-item" href="products.html">
+          Product Page
+        </a>
+        <a class="navbar-item" href="about.html">
+          About Us
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero has-background-danger-light has-text-centered">
+    <div class="hero-body">
+      <p class="title">Products</p>
+      <p class="subtitle">
+        Shopping for your skin can feel overwhelming, but the team is here to help!<br> Check out our curated selection
+        of
+        products that will fit both your needs and your budget.
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <div class="box cta">
+    <p class="has-text-centered">
+      Interested in a product? Click the LEARN MORE button to see details on what could be your soon to be holy-grail
+      product.
+    </p>
+  </div>
+  
+<div id="dropdown" class="dropdown is-hoverable is-pulled-right">
+  <div class="dropdown-trigger">
+    <button class="button is-active" id="menu"  aria-haspopup="true" aria-controls="dropdown-menu3">
+      <span>-----Sort By-----</span>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item is-active" id="optNormal">
+        Normal Skin Type
+      </a>
+      <a href="#" class="dropdown-item is-active" id="optDry">
+         Dry Skin Type
+      </a>
+      <a href="#" class="dropdown-item is-active" id="optOily">
+         Oily Skin Type
+      </a>
+      <a href="#" class="dropdown-item is-active" id="optCombo">
+         Combination Skin Type
+      </a>
+    </div>
+  </div>
+</div>
+<div id="dropdown2" class="dropdown is-hoverable is-pulled-right">
+  <div class="dropdown-trigger">
+    <button class="button is-active" id="menu"  aria-haspopup="true" aria-controls="dropdown-menu3">
+      <span>---Price---</span>
+      </span>
+    </button>
+  </div>
+  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+    <div class="dropdown-content">
+      <a href="#" class="dropdown-item is-active" id="priceAll">
+        Any
+      </a>
+      <a href="#" class="dropdown-item" id="priceLow">
+        Less than $15
+      </a>
+      <a href="#" class="dropdown-item" id="priceMedium">
+        $15 to $35
+      </a>
+      <a href="#" class="dropdown-item" id="priceHigh">
+      More than $35
+      </a>
+    </div>
+  </div>
+</div>
+  
+  
+  
+<!--  <section class="container"/> -->
+ <div class="columns features is-multiline"> 
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="tatchaCleanser" data-type="dry" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3Jm4UTi" alt="Tatcha Rice Wash Skin-Softening Cleanser" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Tatcha Rice Wash Skin-Softening Cleanser</h4>
+                <p>A gently effective, cream cleanser that washes away daily buildup without stripping skin for a
+                  soft,
+                  luminous complexion.</p>
+                <span class="button is-link modal-button" data-target="modal-card">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="ceraveCleanser" data-type="dry" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3bnEGDs" alt="CeraVe Face Wash, Hydrating Facial Cleanser" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>CeraVe Face Wash, Hydrating Facial Cleanser</h4>
+                <p>Dermatologist tested skin care product, CeraVe Hydrating Face Wash for Normal to Dry Skin is a unique formula that cleanses, hydrates and helps restore the protective skin barrier.</p>
+                <span class="button is-link modal-button" data-target="modal-card2">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="laCleanser" data-type="dry" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://target.scene7.com/is/image/Target/GUEST_e92185ec-f8f7-4160-a27f-53f570fd47a5?wid=488&hei=488&fmt=pjpeg" alt="La Roche-Posay Toleriane Hydrating Gentle Cleanser" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>La Roche-Posay Toleriane Hydrating Gentle Cleanser</h4>
+                <p>La Roche-Posay Toleriane Hydrating Gentle Cleanser is a cream formula that helps gently cleanse the skin of makeup, excess oil and other impurities while maintaining its natural moisture barrier.</p>
+                <span class="button is-link modal-button" data-target="modal-card3">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="laneigeToner" data-type="dry" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3PQHBnb" alt="Laneige Cream Skin Toner & Moisturizer" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Laneige Cream Skin Toner & Moisturizer</h4>
+                <p>A two-in-one formula that preps and softens like a toner and moisturizes like a cream for maximum hydration benefits in one simple step.</p>
+                <span class="button is-link modal-button" data-target="modal-card4">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+<!-- 
+    </div>
+
+  </section>
+ -->
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3Jm4UTi" alt="Tatcha Rice Wash Skin-Softening Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Tatcha Rice Wash
+                Soft Cream Cleanser</p>
+              <p class="subtitle is-6">$$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• pH-Neutral Amino Acid Base:</strong> This gentle base removes impurities without stripping skin of
+            its essential oils. Unlike most pH-neutral cleansers, this formula foams into a creamy lather, leaving skin
+            silky, smooth, and well-moisturized. This key ingredient also helps to balance the pH-level of the skin,
+            which helps the skin function properly.<br>
+
+            <strong>• Japanese Rice Powder:</strong> Used in classical Japanese cleansing rituals, rice powder naturally
+            softens and boosts luminosity, while keeping the skin well moisturized.<br>
+
+            <strong>• Okinawa Algae Blend + Hyaluronic Acid:</strong> A special blend of Okinawa algae and hyaluronic
+            acid captures water to help replenish skin’s natural moisture reservoir, immediately leaving skin soft,
+            comforted, and deeply nourished. It also helps to replenish ceramides to ensure optimum skin barrier
+            function, aiding in the reduction of future moisture loss, for skin that is visibly smooth and plump with
+            hydration.<br>
+           
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card2" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3bnEGDs" alt="CeraVe Face Wash, Hydrating Facial Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">CeraVe Face Wash, Hydrating Facial Cleanser</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            • Ceramides help restore and maintain the skin's natural barrier<br>
+            • Hyaluronic acid attracts hydration to the skin's surface and helps dry skin retain moisture<br>
+            • MVE Technology, a patented delivery system, continually releases moisturizing ingredients<br>
+            
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card3" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://target.scene7.com/is/image/Target/GUEST_e92185ec-f8f7-4160-a27f-53f570fd47a5?wid=488&hei=488&fmt=pjpeg"
+              alt="La Roche-Posay Toleriane Hydrating Gentle Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">La Roche-Posay Toleriane Hydrating Gentle Cleanser</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>Niacinamide:</strong>
+            A water-soluble form of vitamin B3 that improves circulation in the skin, reducing the appearance of
+            wrinkles.<br>
+            <em>KEY FEATURES<br></em>
+            • Great for normal, dry or sensitive skin<br>
+            • Soothes redness with niacinamide<br>
+            • Removes makeup and other impurities<br>
+
+           
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card4" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://seph.me/3PQHBnb"
+              alt="Laneige Cream Skin Toner & Moisturizer">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Laneige Cream Skin Toner & Moisturizer</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Amino Acids, Antioxidants</strong><br>
+            <strong>• White Leaf Tea Water</strong><br>
+            <em>KEY FEATURES<br></em>
+            • Using Cream Blending Technology™, Cream Skin toner and moisturizer contains the same moisturization as a jar of cream, made into the lightweight texture of a toner<br>
+
+        
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- END OF ROW 1 -->
+
+<!--     <section class="container"> -->
+<!--     <div class="columns features"> -->
+
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="paulaToner" data-type="dry" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3QefMEP" alt="Paula's Choice Skin Recovery Enriched Hydrating Calming Toner" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Paula's Choice Skin Recovery Enriched Hydrating Calming Toner</h4>
+                <p>This hydrating toner soothes dry, flaky skin and helps revitalize and recover moisture loss while infusing skin with anti-aging antioxidants.</p>
+                <span class="button is-link modal-button" data-target="modal-card5">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="theToner" data-type="dry" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://images.ulta.com/is/image/Ulta/2551155?op_sharpen=1&amp;resMode=bilin&amp;qlt=85&amp;wid=800&amp;hei=800&amp;fmt=jpg" alt="The Ordinary Glycolic Acid 7% Exfoliating Toning Solution"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>The Ordinary Glycolic Acid 7% Exfoliating Toning Solution</h4>
+                <p>Glycolic Acid 7% Toning Solution from The Ordinary is an exfoliating toning solution which offers mild exfoliation for improved skin radiance and visible clarity.</p>
+                <span class="button is-link modal-button" data-target="modal-card6">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="TruskinSerum" data-type="dry" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3OPv9mf" alt="TruSkin Hyaluronic Acid Serum" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>TruSkin Hyaluronic Acid Serum</h4>
+                <p>This ultra-hydrating serum teams botanical Hyaluronic Acid with Aloe Vera and Jojoba Oil to replenish parched skin with long-lasting, softly plumping moisture.</p>
+                <span class="button is-link modal-button" data-target="modal-card7">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="innisfreeSerum" data-type="combo" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3OPvjtR" alt="Innisfree
+Green Tea Hydrating Hyaluronic Acid Serum" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Innisfree Green Tea Hydrating Hyaluronic Acid Serum</h4>
+                <p>A soothing combination of 2% Hyaluronic Acid Complex and Pro-Vitamin B5 that hydrates the skin on multiple levels.</p>
+                <span class="button is-link modal-button" data-target="modal-card8">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!--     </div>
+
+  </section> -->
+
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card5" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3QefMEP" alt="Paula's Choice Skin Recovery Enriched Hydrating Calming Toner">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Paula's Choice Skin Recovery Enriched Hydrating Calming Toner</p>
+              <p class="subtitle is-6">$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Glycerin:</strong> A naturally occurring substance in skin that helps retain moisture. It is used in skin care products to help defend against dryness.
+            silky, smooth, and well-moisturized. This key ingredient also helps to balance the pH-level of the skin,
+            which helps the skin function properly.<br>
+
+            <strong>• Borage Seed Oil:</strong> Non-fragrant plant oil that contains gamma linolenic acid and other essential fatty acids for skin.<br>
+
+            <strong>• Vitamin C:</strong> Ongoing use has been shown to improve the look of multiple signs of aging, brighten an uneven skin tone, as well as provide skin-restoring and soothing benefits.<br>
+            
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card6" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3bjVLxY" alt="The Ordinary Glycolic Acid 7% Exfoliating Toning Solution">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">The Ordinary Glycolic Acid 7% Exfoliating Toning Solution</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Formulated without Fragrance</strong><br>
+            <strong>• Glycolic Acid:</strong> Glycolic acid works to exfoliate the skin, speed up cell turnover, and boost collagen production.<br>
+            <strong>• Rosa Damascena Flower Water:</strong> A staple ingredient in many natural rose water products; it has antibacterial, antimicrobial, and anti-inflammatory properties, thus helping soothe skin, minimize pores, and reduce fine lines.<br>
+          
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card7" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3OPv9mf"
+              alt="TruSkin Hyaluronic Acid Serum">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">TruSkin Hyaluronic Acid Serum</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Aloe Vera and Vitamin E:</strong>
+             This ultra-hydrating serum teams botanical Hyaluronic Acid with Aloe Vera and Jojoba Oil to replenish parched skin with long-lasting, softly plumping moisture.
+<br>
+            <strong>• Antioxidants:</strong>
+             Heavy-hitting hydrators work in tandem with anti-aging MSM, Green Tea, Vitamin C, and Vitamin E to promote ever-improving firmness, texture, and tone.
+<br>
+            <strong>• Hyalouric Acid</strong>
+             With Hyaluronic Acid acting as a moisture magnet, this powerful serum locks in even more hydration when applied prior to creams and lotions, making it the perfect partner to power up your moisturizer.
+<br>
+            
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card8" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://www.sephora.com/productimages/sku/s2500122-main-zoom.jpg"
+              alt="Innisfree Green Tea Hydrating Hyaluronic Acid Serum">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Innisfree
+Green Tea Hydrating Hyaluronic Acid Serum</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Hyaluronic Acid:</strong>
+            Five types of hyaluronic acid deliver layers of amplified hydration.<br>
+            <strong>• Green Tea Tri-biotics™:</strong>
+            Support skin’s invisible ecosystem and care for the moisture barrier.<br>
+            <strong>• Jeju Green Tea Extracts:</strong>
+            Jeju Green Tea Water and Seed Oil deliver amino acid-rich moisture.<br>
+
+           
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- END OF ROW 2 -->
+
+<!--       <section class="container"> -->
+<!--     <div class="columns features"> -->
+
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light normal" id="drunkSerum" data-type="normal" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3d2caYA" alt="Drunk Elephant
+B-Hydra™ Intensive Hydration Serum with Hyaluronic Acid" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Drunk Elephant
+B-Hydra™ Intensive Hydration Serum with Hyaluronic Acid</h4>
+                <p>A cool drink of water for thirsty skin, this hydrating serum visibly replenishes the complexion and improves the look of skin texture and tone.</p>
+                <span class="button is-link modal-button" data-target="modal-card9">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="paulaMoist" data-type="dry" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3JjpNi5" alt="Paula's Choice 
+Omega+ Complex Moisturizer"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Paula's Choice 
+Omega+ Complex Moisturizer</h4>
+                <p>Naturally restore dehydrated skin's glow with this cloud-like cream's blend of superfood omega fatty acids, replenishing ceramides and antioxidants.</p>
+                <span class="button is-link modal-button" data-target="modal-card10">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="farmacyMoist" data-type="dry" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3oLeEwR" alt="Farmacy HONEY HALO
+ceramide face moisturizer" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Farmacy HONEY HALO
+ceramide face moisturizer</h4>
+                <p>An intensely hydrating ceramide face moisturizer perfect for replenishing dry, distressed skin to help visibly plump skin and improve the look of fine lines. For normal to dry skin.</p>
+                <span class="button is-link modal-button" data-target="modal-card11">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="biossanceMoist" data-type="combo" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3ByJi4f" alt="Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER</h4>
+                <p>A soothing combination of 2% Hyaluronic Acid Complex and Pro-Vitamin B5 that hydrates the skin on multiple levels.</p>
+                <span class="button is-link modal-button" data-target="modal-card12">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!--     </div>
+
+  </section> -->
+
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card9" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3d2caYA" alt="Drunk Elephant
+B-Hydra™ Intensive Hydration Serum with Hyaluronic Acid">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Drunk Elephant
+B-Hydra™ Intensive Hydration Serum with Hyaluronic Acid</p>
+              <p class="subtitle is-6">$$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Pineapple Ceramide:</strong> Boosts luminosity and improves the appearance of skin’s texture and tone.<br>
+
+            <strong>• Provitamin B5:</strong> As a humectant, it attracts hydration to the skin and holds it there, visibly improving skin’s barrier function.<br>
+
+            <strong>• Sodium Hyaluronate:</strong> With a smaller molecular weight than hyaluronic acid, it is able to penetrate skin and deliver intense hydration to reduce the appearance of fine lines and wrinkles and promote visible firmness.<br>
+           
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card10" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3JjpNi5" alt="Paula's Choice 
+Omega+ Complex Moisturizer">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Paula's Choice 
+Omega+ Complex Moisturizer</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Omegas 3, 6 & 9:</strong> Strengthen moisture barrier.<br>
+
+            <strong>• Passion fruit & guava extracts:</strong> Soothes stressed skin.<br>
+
+            <strong>• Lightweight, whipped texture:</strong> Locks in hydration.<br>
+          
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card11" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3oLeEwR"
+              alt="Farmacy HONEY HALO
+ceramide face moisturizer">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Farmacy HONEY HALO
+ceramide face moisturizer</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Buckwheat Honey:</strong>
+Renews the skin’s appearance for a dewy, healthy-looking glow.
+<br>
+            <strong>• Plant-based Ceramides:</strong>
+             Replenishes the skin barrier while shea butter and vitamin E lock in moisture.
+<br>
+            <strong>• Fig Fruit Extract:</strong>
+             Leaves skin smooth and supple.
+<br>
+          
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card12" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://seph.me/3ByJi4f"
+              alt="Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Squalane:</strong>
+            Derived from sugarcane, it mimics body's natural hydrating oils to provide weightless moisture to deliver active ingredients deep into the skin and prevent overdrying.<br>
+            <strong>• Red Seaweed:</strong>
+            Calms the look of stressed skin.<br>
+            <strong>• Swiss Garden Cress Sprouts:</strong>
+            Visibly brightens and helps to fade the look of dark spots, evening skin tone<br>
+
+          
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  
+  <!-- END OF ROW 3 -->
+
+<!--   <section class="container"> -->
+<!--     <div class="columns features"> -->
+
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="innisSun" data-type="dry" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3OTRCyq" alt="Innisfree Daily UV Defense Sunscreen SPF 36"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Innisfree Daily UV Defense Sunscreen SPF 36</h4>
+                <p>A lightweight, daily Broad Spectrum SPF 36 sunscreen delivering invisible sun protection while hydrating and soothing skin - no white-cast, just glow!</p>
+                <span class="button is-link modal-button" data-target="modal-card13">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="superSun" data-type="dry" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3Shsy7z" alt="Supergoop! Unseen Sunscreen SPF 40"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Supergoop! Unseen Sunscreen SPF 40</h4>
+                <p>The original, totally invisible, weightless, scentless sunscreen with SPF 40 that leaves a velvety finish. This innovative, antioxidant-rich multitasker has a unique oil-free formula that glides onto skin while providing broad spectrum SPF 40 protection.</p>
+                <span class="button is-link modal-button" data-target="modal-card14">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="fridaySun" data-type="dry" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3d132Dz" alt="Summer Fridays
+ShadeDrops Broad Spectrum SPF 30 Mineral Milk Sunscreen" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Summer Fridays
+ShadeDrops Broad Spectrum SPF 30 Mineral Milk Sunscreen</h4>
+                <p>A lightweight, reef-friendly, SPF 30 mineral sunscreen that helps shield skin from UV rays and leaves skin with a soft, natural-looking finish.</p>
+                <span class="button is-link modal-button" data-target="modal-card15">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="paulaClean" data-type="normal" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3zXHYa5" alt="Paula's Choice Pore Normalizing Cleanser" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Paula's Choice Pore Normalizing Cleanser</h4>
+                <p>This gentle, acne-fighting cleanser removes excess oil, pore-clogging debris and makeup without drying skin or causing redness.</p>
+                <span class="button is-link modal-button" data-target="modal-card16">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!--     </div>
+
+  </section>
+ -->
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card13" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://seph.me/3OTRCyq" alt="Innisfree Daily UV Defense Sunscreen SPF 36">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Innisfree Daily UV Defense Sunscreen SPF 36</p>
+              <p class="subtitle is-6">$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Green Tea:</strong> Nurtures skin with soothing hydration.<br>
+
+            <strong>• Cica:</strong> Soothes skin and reduces visible signs of irritation.<br>
+
+            <strong>• Sunflower Seed Oil:</strong> Delivers lightweight moisture to skin.<br>
+            
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card14" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3Shsy7z" alt="Supergoop! Unseen Sunscreen SPF 40">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Supergoop! Unseen Sunscreen SPF 40</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Frankincense:</strong> Helps the skin be resilient and provides a soothing effect.<br>
+
+            <strong>• Complex Derived from Meadowfoam Seed:</strong> Increases hydration levels, resulting in a more even skin texture.<br>
+
+            <strong>• Scentless:</strong> Prevents potential reactions or breakouts.<br>
+        
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card15" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://seph.me/3d132Dz"
+              alt="Summer Fridays
+ShadeDrops Broad Spectrum SPF 30 Mineral Milk Sunscreen">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Summer Fridays
+ShadeDrops Broad Spectrum SPF 30 Mineral Milk Sunscreen</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Zinc Oxide:</strong>
+Shields skin from damaging UV rays and is gentle enough for sensitive skin.
+<br>
+            <strong>• Squalane:</strong>
+             Leaves skin appearing softer, smoother, and plumped up.
+<br>
+            <strong>•  Antioxidant Complex (Vitamin E and Ethyl Ferulate):</strong>
+             Helps protect skin against free-radical damage.
+<br>
+           
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card16" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3zXHYa5"
+              alt="Paula's Choice Pore Normalizing Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Paula's Choice Pore Normalizing Cleanser</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Salicylic Acid:</strong>
+            Offers soothing and hydrating benefits in well-formulated cleansers.<br>
+            <strong>• Fragrance-free:</strong>
+            Contains an array of soothing ingredients such as arginine, panthenol and salicylic acid.<br>
+            <strong>• Hydrogenated Castor Oil:</strong>
+            Helps product rinse cleanly from skin, whisking away oil, dirt and debris in the process.<br>
+
+         
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  
+  <!-- END OF ROW 4 -->
+
+<!--   <section class="container">
+    <div class="columns features"> -->
+
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="glossierClean" data-type="normal" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3PSPkRp" alt="Glossier Milky Jelly Cleanser"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Glossier Milky Jelly Cleanser</h4>
+                <p>A nourishing (and pH-balanced), creamy gel face wash that’s kind to every skin type under the sun.</p>
+                <span class="button is-link modal-button" data-target="modal-card17">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="youthSun" data-type="normal" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3zP4y4D" alt="Youth to the People Superfood Cleanser"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Youth to the People Superfood Cleanser</h4>
+                <p>The powerful, but gentle daily face wash is formulated with superfood antioxidants from kale, spinach, and green tea - to give your skin the ultimate cleanse.</p>
+                <span class="button is-link modal-button" data-target="modal-card18">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="dermaToner" data-type="normal" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3PSOnc2" alt="Dermalogica Multi-active Toner" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Dermalogica Multi-active Toner</h4>
+                <p>Light facial toner hydrates and refreshes. This ultra-light toner with moisture-binding humectants helps condition and prep skin for proper moisture absorption.</p>
+                <span class="button is-link modal-button" data-target="modal-card19">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="versedToner" data-type="normal" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3zN3Xjz" alt="Versed BABY CHEEKS
+HYDRATING MILK TONER" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Versed BABY CHEEKS
+HYDRATING MILK TONER</h4>
+                <p>This dreamy milk is no ordinary toner. It does more than hydrate and replenish—this toner restores skin’s natural pH balance removes post-cleanse hard water residue, and lifts those last remaining traces of the day’s makeup.</p>
+                <span class="button is-link modal-button" data-target="modal-card20">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!--     </div>
+
+  </section> -->
+
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card17" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3PSPkRp" alt="Glossier Milky Jelly Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Glossier Milky Jelly Cleanser</p>
+              <p class="subtitle is-6">$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Allantoin and Pro-Vitamin B5:</strong> Leaves your skin feeling baby soft (not like you need to rush for moisturizer afterwards)<br>
+
+            <strong>• Poloxamer:</strong> Mild cleansing agent that’s found in contact lens solution, so it’s safe for eyes (and doesn’t sting when removing your mascara!).<br>
+
+            <strong>• “Milky” Phase:</strong> Conditions skin to keep it fresh, happy, and moisturized.<br>
+           
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card18" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://seph.me/3zP4y4D" alt="Youth to the People Superfood Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Youth to the People Superfood Cleanser</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Kale:</strong> This leafy veg is a must-have for more than just your morning juice. It's rich in skin-loving phytonutrients and vitamins C and E.<br>
+
+            <strong>• Spinach:</strong> A lightweight skin-soother that boasts a high natural moisture content and cooling properties.<br>
+
+            <strong>• Green Tea:</strong> An anti-inflammatory oil packed with essential fatty acids.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card19" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3PSOnc2"
+              alt="Dermalogica Multi-active Toner">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Dermalogica Multi-active Toner</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Soothing Arnica, Balm Mint and Lavender:</strong>
+Refresh the skin, making this spritz ideal for skin hydration after cleansing and throughout the day.
+<br>
+            <strong>• Aloe Barbadensis Extract:</strong>
+             This commonly used plant extract offers antioxidant qualities to defend skin from environmental stressors.
+<br>
+            <strong>• Lavandula Angustifolia:</strong>
+             Lavender essential oil is one of the most popular and versatile essential oils used in aromatherapy.
+<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card20" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3zN3Xjz"
+              alt="Versed BABY CHEEKS
+HYDRATING MILK TONER">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Versed BABY CHEEKS
+HYDRATING MILK TONER</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Coconut Water:</strong>
+            Helps to stimulate collagen production for plumper and healthier-looking skin.<br>
+            <strong>• Algae Extract:</strong>
+            Help to protect your skin, repair damage and fight against wrinkles and the other signs of aging.<br>
+            <strong>• Bamboo Extract:</strong>
+            Aids in the production of collagen and resulting in the appearance of smoother, more supple skin.<br>
+
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- END OF ROW 5 -->
+
+<!--     <section class="container">
+    <div class="columns features"> -->
+
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="bioToner" data-type="normal" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3cL9ONl" alt="Biossance SQUALANE + BHA PORE-MINIMIZING TONER"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Biossance SQUALANE + BHA PORE-MINIMIZING TONER</h4>
+                <p>The secret is raw white willowbark, a powerful source of natural BHAs with multiple benefits: inflammation-calming, dead skin-dissolving, and texture-smoothing.</p>
+                <span class="button is-link modal-button" data-target="modal-card21">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="lorealSerum" data-type="normal" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3PT1YzU" alt="L'Oréal Revitalift 1.5% Pure Hyaluronic Acid Serum"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>L'Oréal Revitalift 1.5% Pure Hyaluronic Acid Serum</h4>
+                <p>L'Oréal's Revitalift Hyaluronic Acid Serum is a fragrance free 1.5% pure hyaluronic acid serum to intensely hydrate, visibly plump skin and reduce wrinkles. Validated by dermatologists.</p>
+                <span class="button is-link modal-button" data-target="modal-card22">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="riceSerum" data-type="normal" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3vxt07M" alt="I'm From Rice Serum" />
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>I'm From Rice Serum</h4>
+                <p>I'm From Rice Serum is formulated with 73% fermented rice embryo extract, which contains concentrated nutrition in a smaller size than the traditional rice grain.</p>
+                <span class="button is-link modal-button" data-target="modal-card23">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="sundayAcid" data-type="normal" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3zK2KcV" alt="Sunday Riley Good Genes Lactic Acid Treatment"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Sunday Riley Good Genes Lactic Acid Treatment</h4>
+                <p>Good Genes deeply exfoliates the dull surface of the skin for instant glow and radiance.</p>
+                <span class="button is-link modal-button" data-target="modal-card24">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!--     </div>
+
+  </section> -->
+
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card21" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://seph.me/3cL9ONl" alt="Biossance SQUALANE + BHA PORE-MINIMIZING TONER">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Biossance SQUALANE + BHA PORE-MINIMIZING TONER</p>
+              <p class="subtitle is-6">$$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Squalane:</strong> Derived from sugarcane, it mimics body's natural hydrating oils to provide weightless moisture to deliver active ingredients deep into the skin and prevent overdrying.<br>
+
+            <strong>• Caviar Lime Extract:</strong> A citrus essence that gently exfoliates and improves skin texture.<br>
+
+            <strong>• No Alcohol:</strong> Skin is left softly refreshed and clean-feeling, never stripped or dry.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card22" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3vTTuRp" alt="L'Oréal Revitalift 1.5% Pure Hyaluronic Acid Serum">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">L'Oréal Revitalift 1.5% Pure Hyaluronic Acid Serum</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Glycerin:</strong> One of the most effective moisturisers as it helps your skin absorb moisture from the air.<br>
+
+            <strong>• Hydrogenated Castor Oil:</strong> An emollient that softens and moisturizes the skin.<br>
+
+            <strong>• Hyalouric Acid:</strong> Hyaluronic acid is very good at retaining water and helps your joints work like a well-oiled machine.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card23" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3vxt07M"
+              alt="I'm From Rice Serum">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">I'm From Rice Serum</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Rice Germ Ferment Extract:</strong>
+Refresh the skin, making this spritz ideal for skin hydration after cleansing and throughout the day.
+<br>
+            <strong>• Niacinamide:</strong>
+             Helps limit inflammation as well as control the appearance of oil on the surface of skin. 
+<br>
+            <strong>• Hydrolyzed Hyaluronic Acid:</strong>
+             Helps the skin to repair itself by increasing its self-defense.
+<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card24" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3zK2KcV"
+              alt="Sunday Riley Good Genes Lactic Acid Treatment">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Sunday Riley Good Genes Lactic Acid Treatment</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Purified Lactic Acid:</strong>
+            One of the most hydrating Alpha Hydroxy Acids (AHAs), Lactic Acid exfoliates the surface layers of the skin, revealing a more clarified, fresher, smoother, younger-looking complexion.<br>
+            <strong>• Prickly Pear Extract:</strong>
+            Rare desert cactus extract that instantly soothes skin.<br>
+            <strong>• Lemongrass:</strong>
+            Astringent and skin refreshing for a toned complexion.<br>
+
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- END OF ROW 6 -->
+
+<!--     <section class="container">
+    <div class="columns features">
+ -->
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="versedCream" data-type="normal" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3JllfaG" alt="Versed DEW POINT
+MOISTURIZING GEL-CREAM"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Versed DEW POINT
+MOISTURIZING GEL-CREAM</h4>
+                <p>Looking for bouncy skin? Choose a bouncy moisturizer. This lightweight moisturizing gel-cream with a jelly-like texture absorbs instantly and disappears into your skin, leaving it feeling refreshed, never greasy.</p>
+                <span class="button is-link modal-button" data-target="modal-card25">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="paulaGel" data-type="normal" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3bjREC0" alt="Paula's Choice SKIN BALANCING
+Invisible Finish Moisture Gel"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Paula's Choice SKIN BALANCING
+Invisible Finish Moisture Gel</h4>
+                <p>A moisturizer that provides essential hydration, helps minimize the appearance of pores, and provides antioxidants to help defend against environmental assault.</p>
+                <span class="button is-link modal-button" data-target="modal-card26">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="bioGel" data-type="normal" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3JohHV7" alt="Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER</h4>
+                <p>A weightless, ultra-hydrating gel moisturizer infused with squalane and probiotic technology to help restore skin’s healthy-looking beauty and radiance. </p>
+                <span class="button is-link modal-button" data-target="modal-card27">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="heroSun" data-type="normal" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3vvC4dt" alt="Hero Superlight Sunscreen SPF 30"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Hero Superlight Sunscreen SPF 30</h4>
+                <p>Superlight zinc oxide physically blocks UVA/UVB rays to protect your skin on the daily. Absorbs quick with a weightless gel-cream formula that’s hydrating – but not greasy.</p>
+                <span class="button is-link modal-button" data-target="modal-card28">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--     </div>
+
+  </section> -->
+
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card25" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3JllfaG" alt="Versed DEW POINT
+MOISTURIZING GEL-CREAM">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Versed DEW POINT
+MOISTURIZING GEL-CREAM</p>
+              <p class="subtitle is-6">$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Green Tea Leaf Extract:</strong> Helps with acne and help your skin look younger, but it also has the potential for helping to prevent melanoma and nonmelanoma skin cancers.<br>
+
+            <strong>• Aloe Leaf Juice:</strong> Contains antioxidants, enzymes, Vitamins A and C, and it is highly anti-inflammatory. It can help treat burns, acne and dry skin.<br>
+
+            <strong>• Sodium Hyaluronate:</strong> Reduces dryness and flaking by increasing skin hydration.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card26" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3bjREC0" alt="Paula's Choice SKIN BALANCING
+Invisible Finish Moisture Gel">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Paula's Choice SKIN BALANCING
+Invisible Finish Moisture Gel</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Algae Extract:</strong> Protect your skin, repair damage and fight against wrinkles and the other signs of aging.<br>
+
+            <strong>• Niacinamide:</strong> Helps build keratin, a type of protein that keeps your skin firm and healthy.<br>
+
+            <strong>• Wheat Germ Oil:</strong> A great source of Vitamin E, which is said to be a powerful antioxidant.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card27" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://seph.me/3JohHV7"
+              alt="Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Biossance SQUALANE + PROBIOTIC GEL MOISTURIZER</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Squalane:</strong>
+Derived from sugarcane, it mimics body's natural hydrating oils to provide weightless moisture to deliver active ingredients deep into the skin and prevent overdrying.
+<br>
+            <strong>• Red Seaweed:</strong>
+             Visibly reduces redness and irritation. 
+<br>
+            <strong>• Swiss Garden Cress Sprouts:</strong>
+             Visibly brightens and helps to fade the look of dark spots, evening skin tone.
+<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card28" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3vvC4dt"
+              alt="Hero Superlight Sunscreen SPF 30">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Hero Superlight Sunscreen SPF 30</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• 17.53% Zinc Oxide (Non-Nano):</strong>
+            UVA & UVB shield.<br>
+            <strong>• Green Surge:</strong>
+            Antioxidant superfood botanicals.<br>
+            <strong>• Extremolytes:</strong>
+            Naturally defensive bio-ingredients.<br>
+
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- END OF ROW 7 -->
+
+<!--     <section class="container">
+    <div class="columns features">
+ -->
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="laneigeSun" data-type="normal" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3cT19bQ" alt="LANEIGE Hydro UV Defense SPF 50+"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>LANEIGE Hydro UV Defense SPF 50+</h4>
+                <p>This hydating daily facial sunscreen with SPF 50+ helps protect against UVA & UVB rays leaving no visible cast.</p>
+                <span class="button is-link modal-button" data-target="modal-card29">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="shiseidoSun" data-type="normal" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3p4n0A5" alt="Shiseido
+Ultimate Sun Protector Lotion SPF 50+ Sunscreen"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Shiseido
+Ultimate Sun Protector Lotion SPF 50+ Sunscreen</h4>
+                <p>An invisible, broad-spectrum SPF 50+ sunscreen with a protective veil that can become more effective in water, sweat, and heat.</p>
+                <span class="button is-link modal-button" data-target="modal-card30">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="innisClean" data-type="dry" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://seph.me/3oJ8HR5" alt="Innisfree Green Tea Facial Cleanser"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Innisfree Green Tea Facial Cleanser</h4>
+                <p>A weightless, ultra-hydrating gel moisturizer infused with squalane and probiotic technology to help restore skin’s healthy-looking beauty and radiance. </p>
+                <span class="button is-link modal-button" data-target="modal-card31">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="ceraveWash" data-type="dry" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3zOw7ec" alt="CeraVe Cream-to-Foam Makeup Remover and Face Wash"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>CeraVe Cream-to-Foam Makeup Remover and Face Wash</h4>
+                <p>CeraVe all-in-one facial cleanser gently removes dirt, excess oil, and even long-wear makeup including eye makeup and daily SPF sunscreen residue.</p>
+                <span class="button is-link modal-button" data-target="modal-card32">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!--     </div>
+
+  </section> -->
+
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card29" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://seph.me/3cT19bQ" alt="LANEIGE Hydro UV Defense SPF 50+">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">LANEIGE Hydro UV Defense SPF 50+</p>
+              <p class="subtitle is-6">$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Centella Asiatica:</strong> Helps soothe the skin.<br>
+
+            <strong>• Hydro Ionized Mineral Water:</strong> Delivers intense hydration.<br>
+
+            <strong>• Free of parabens:</strong> Parabens can disrupt hormones in the body and harm fertility and reproductive organs, affect birth outcomes, and increase the risk of cancer.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card30" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://seph.me/3p4n0A5" alt="Shiseido
+Ultimate Sun Protector Lotion SPF 50+ Sunscreen">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Shiseido
+Ultimate Sun Protector Lotion SPF 50+ Sunscreen</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• WetForce Technology:</strong> Negative ions in the formula combine with positive ions in water and perspiration to form bonds that create a layer of invisible sun protection.<br>
+
+            <strong>• HeatForce Technology:</strong> A heat-sensing essence that becomes activated by external heat, helping to form a stronger UV-protective barrier.<br>
+
+            <strong>• Ingredient Callouts:</strong> Free of formaldehydes, phthalates, mineral oil, retinyl palmitate, oxybenzone, coal tar, hydroquinone, sulfates SLS & SLES, triclocarban, and triclosan.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card31" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://seph.me/3oJ8HR5"
+              alt="Innisfree Green Tea Facial Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Innisfree Green Tea Facial Cleanser</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Jeju Green Tea Extract:</strong>
+Replenishes hydration.
+<br>
+            <strong>• Jeju Green Tea Root Extract:</strong>
+             A natural surfactant that helps deliver a gentle cleanse using microbubbles. 
+<br>
+            <strong>• Ingredient Callouts:</strong>
+             Free of sulfates SLS and SLES, parabens, formaldehydes, formaldehyde-releasing agents, phthalates, mineral oil, retinyl palmitate, oxybenzone, coal tar, hydroquinone, triclosan, and triclocarban.
+<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card32" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://bit.ly/3zOw7ec"
+              alt="CeraVe Cream-to-Foam Makeup Remover and Face Wash">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">CeraVe Cream-to-Foam Makeup Remover and Face Wash</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Hyaluronic and Amino Acids:</strong>
+            Supports skin's Natural Moisturizing Factors (NMF), known to attract and retain moisture.<br>
+            <strong>• Ceramides:</strong>
+            CeraVe products, formulated with three essential ceramides (1, 3, 6-II)to help maintain the skin’s natural barrier.<br>
+            <strong>• Non-drying Formula:</strong>
+            Thoroughly cleanses without stripping skin of moisture or leaving a tight, dry feeling while providing long-lasting hydration.<br>
+
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- END OF ROW 8 -->
+
+<!-- 
+    <section class="container">
+    <div class="columns features">
+ -->
+
+      <!-- COLUMN 1 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 1 -->
+        <div class="box has-background-danger-light" id="medicaCleanser" data-type="combo" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3vTXfX1" alt="SkinMedica AHA/BHA Exfoliating Cleanser"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>SkinMedica AHA/BHA Exfoliating Cleanser</h4>
+                <p>This elegantly formulated exfoliating cleanser gently scrubs away dead skin, improving the appearance of skin tone and texture.</p>
+                <span class="button is-link modal-button" data-target="modal-card33">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 2 -->
+        <div class="box has-background-danger-light" id="rocheCleanser" data-type="oily" data-price="low">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://bit.ly/3BuI7CZ" alt="La Roche-Posay Toleriane Purifying Foaming Facial Cleanser"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>La Roche-Posay Toleriane Purifying Foaming Facial Cleanser</h4>
+                <p>Toleriane Purifying Foaming Facial Cleanser is a daily face wash for normal to oily, sensitive skin. Formulated with La Roche-Posay prebiotic thermal spring water, niacinamide, and ceramide-3, this face wash gently cleanses skin of dirt, makeup, and impurities while maintaining the skin's natural moisture barrier and pH.</p>
+                <span class="button is-link modal-button" data-target="modal-card34">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 3 -->
+        <div class="box has-background-danger-light" id="glossierConcentrate" data-type="oily" data-price="medium">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://theskincareedit.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTgwNzkxMTI0NDYwMzE2MDA4/glossier-cleanser-concentrate.jpg" alt="Glossier Cleanser Concentrate"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>Glossier Cleanser Concentrate</h4>
+                <p>A highly concentrated cleanser that exfoliates, clarifies, and re-energizes skin in 60 seconds. </p>
+                <span class="button is-link modal-button" data-target="modal-card35">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="column is-one-quarter" style="display:flexbox">        <!-- CARD 4 -->
+        <div class="box has-background-danger-light" id="eltaClean" data-type="oily" data-price="high">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-hoverable">
+                <img src="https://m.media-amazon.com/images/I/71pTULczL5L._SL1500_.jpg" alt="EltaMD Deep Pore Facial Cleanser"/>
+              </figure>
+            </div>
+            <div class="card-content">
+              <div class="content">
+                <h4>EltaMD Deep Pore Facial Cleanser</h4>
+                <p>EltaMD Facial Cleanser cleanses deeply without over-drying and leaves your skin feeling soft, smooth and clean. It is oil-free and does not contain AHAs, glycolic acids.</p>
+                <span class="button is-link modal-button" data-target="modal-card36">Learn More</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+  </section>
+ -->
+  <!--  ===============
+    HERE BE MODALS
+    ===============  -->
+
+  
+  <!-- 3dFlipVertical card tiny 1 -->
+  <div id="modal-card33" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3vTXfX1" alt="SkinMedica AHA/BHA Exfoliating Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">SkinMedica AHA/BHA Exfoliating Cleanser</p>
+              <p class="subtitle is-6">$$$ <br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Jojoba Oil:</strong> Round soft jojoba spheres gently exfoliate minimizing irritation to skin.<br>
+
+            <strong>• Salicylic Acid:</strong> A beta-hydroxy acid (BHA) that helps exfoliate skin.<br>
+
+            <strong>• Alpha-hydroxy Acids (AHA):</strong> Help promote collagen production and reduce the appearance of surface lines and wrinkles.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+
+
+  
+  <!-- 3dFlipVertical card tiny 2 -->
+  <div id="modal-card34" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img src="https://bit.ly/3BuI7CZ" alt="La Roche-Posay Toleriane Purifying Foaming Facial Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">La Roche-Posay Toleriane Purifying Foaming Facial Cleanser</p>
+              <p class="subtitle is-6">$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Ceramide-3:</strong> Ceramides are lipids naturally found in skin. They play an essential role to help retain moisture and maintain a healthy skin barrier. Ceramide 3, also known as Ceramide NP, is a skin-identical lipid used in our formulas to help support the skin moisture barrier.<br>
+
+            <strong>• Niacinamide:</strong> A form of vitamin B3, niacinamide is a water soluble vitamin. It is widely used in dermatology for its soothing properties, helping restore skin's moisture barrier, and visibly fading skin discolorations.<br>
+
+            <strong>• La Roche-Posay Prebiotic Thermal Water:</strong> A soothing water sourced in the town of La Roche-Posay in France and a core ingredient in most of our products. It contains a unique combination of minerals, trace elements, and a high concentration of selenium, a natural antioxidant.<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+  <!-- 3dFlipVertical card tiny 3 -->
+  <div id="modal-card35" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://theskincareedit.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTgwNzkxMTI0NDYwMzE2MDA4/glossier-cleanser-concentrate.jpg"
+              alt="Glossier Cleanser Concentrate">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">Glossier Cleanser Concentrate</p>
+              <p class="subtitle is-6">$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Chamomile Flower Water, Calendula Extract, and antioxidant-packed Passionfruit Extract:</strong>
+Helps maintain your skin’s delicate balance of moisture.
+<br>
+            <strong>• Grape Ferment, Grape Extract, Lactic Acid, and Malic Acid:</strong>
+             Wash away dull skin (for a nice, smooth glow!) 
+<br>
+            <strong>• Niacinamide:</strong>
+             Visibly refines pores
+<br>
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+
+ <!-- 3dFlipVertical card tiny 4 -->
+  <div id="modal-card36" class="modal modal-fx-3dSlit">
+    <div class="modal-background"></div>
+    <div class="modal-content is-tiny">
+      <!-- content -->
+      <div class="card">
+        <div class="card-image">
+          <figure>
+            <img
+              src="https://m.media-amazon.com/images/I/71pTULczL5L._SL1500_.jpg"
+              alt="EltaMD Deep Pore Facial Cleanser">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-left">
+
+            </div>
+            <div class="media-content">
+              <p class="title is-4">EltaMD Deep Pore Facial Cleanser</p>
+              <p class="subtitle is-6">$$$<br> Use &#9925 or
+                &#127769</p>
+            </div>
+          </div>
+          <div class="content">
+            <em>FEATURED INGREDIENTS<br></em>
+
+            <strong>• Bromelain:</strong>
+            Enzymes found in pineapples that work as an anti-inflammatory and reduces inflammation. Adds the foaming feature, leaving skin silky smooth.<br>
+            <strong>• pH-balanced:</strong>
+            Helps keep the level of acids and bases on your skin at which your skin feels best.<br>
+
+            <a>@bulmaio</a>.
+            <a href="#">#css</a>
+            <a href="#">#responsive</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+  <!-- end tiny modal card -->
+  
+  
+  
+
+
+  <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/overlayscrollbars/1.9.1/js/OverlayScrollbars.min.js'></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      //The first argument are the elements to which the plugin shall be initialized
+      //The second argument has to be at least a empty object or a object with your desired options
+      OverlayScrollbars(document.querySelector("body")    )});
+  </script>
+</body>
+
+<footer class="footer has-background-danger-light">
+  <div class="content has-text-centered">
+    <p class="subtitle">Disclaimer‼️ We are not licensed professionals. We are here to share our passion for skincare
+      and hope you find our site helpful. -SKN Team ^_^</p>
+    <br>
+              <button class="button is-large is-responsive"> <a href="https://docs.google.com/spreadsheets/d/1syfhY2mUgjK0BxvzTTfH3akVJfAU1CYS6TXUmmVYyHE/view?usp=sharing">View Our Full Database</a></button>
+  </div>
+</footer>
+
+</html>

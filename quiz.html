@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Take the Quiz</title>
+  <link rel="icon" href="https://www.pngmart.com/files/13/Facial-Mask-Transparent-PNG.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <h1>Home</h1>
+      </a>
+
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="quiz.html">
+          Take the Quiz!
+        </a>
+        <a class="navbar-item" href="myths.html">
+          Myths and More Info
+        </a>
+        <a class="navbar-item" href="products2.html">
+          Product Page
+        </a>
+        <a class="navbar-item" href="about.html">
+          About Us
+        </a>
+
+      </div>
+    </div>
+  </nav>
+  <section class="hero has-background-danger-light has-text-centered">
+    <div class="hero-body">
+      <p class="title">Skin Quiz</p>
+      <p class="subtitle">Take our short questionaire to determine your skin-type!</p>
+    </div>
+  </section>
+
+  <!-- Body Code -->
+
+  <section class="hero">
+    <div class="container has-text-centered">
+      <!-- Question 1 -->
+      <section class="section" id="poreQuestion" style="display:">
+        <h1 class="title">What best describes the appearance of your pores?
+        </h1>
+        <!-- Answer Choices -->
+        <div class="container" id="question1">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure id="pore-0" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img src="https://cdn.shopify.com/s/files/1/0106/7319/2996/files/PORES_WEB_1920x.png?v=1603808972"
+                    alt="large pores" />
+                </div>
+                <div class="subtitle">Large and visible</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure id="pore-1" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/005/482/705/original/nose-with-acne-line-icon-cosmetic-skin-problem-dots-in-clogged-pores-on-nose-outline-icon-blackheads-pimple-on-nose-linear-pictogram-isolated-illustration-vector.jpg"
+                    alt="medium pores" />
+                </div>
+                <div class="subtitle">Medium</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure id="pore-2" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn5.vectorstock.com/i/thumb-large/17/69/nose-teen-problems-icon-flat-style-vector-37651769.jpg"
+                    alt="small pores" />
+                </div>
+                <div class="subtitle">Small, not noticeable</div>
+              </figure>
+            </div>
+            <!-- D -->
+            <div class="column has-text-centered">
+              <figure id="pore-3" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://thumbs.dreamstime.com/b/t-zone-area-has-sebaceous-glands-than-any-other-location-65582123.jpg"
+                    alt="red" />
+                </div>
+                <div class="subtitle">Large or medium in the t-zone area</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 2 -->
+      <section class="section hidden" id="shineQuestion" style="display:none">
+        <h1 class="title">What describes the shine of your skin?
+        </h1>
+        <!-- Answer Choices -->
+        <div class="container" id="question2">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure id="shine-0" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://www.skincare.com/-/media/project/loreal/brand-sites/sdc/americas/us/articles/2019/06_june/25-t-zone/t-zone-hero-scd-062519.jpg"
+                    alt="Alaska" />
+                </div>
+                <div class="subtitle">Shiny in t-zone and dull on rest of face</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure id="shine-1" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn2.stylecraze.com/wp-content/uploads/2021/07/Reasons-Behind-Your-Shiny-Skin-And-Ways-To-Manage-It-Banner.jpg"
+                    alt="space" />
+                </div>
+                <div class="subtitle">Bright and reflective</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure id="shine-2" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img src="https://www.apetogentleman.com/wp-content/uploads/2019/08/best-bb-creams-men1.jpg"
+                    alt="New Orleans" />
+                </div>
+                <div class="subtitle">Clean and soft matte</div>
+              </figure>
+            </div>
+            <!-- D -->
+            <div class="column has-text-centered">
+              <figure id="shine-3" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img src="https://www.tokyoweekender.com/wp-content/uploads/2020/09/Skin-redness.jpg"
+                    alt="Staycation Bedroom" />
+                </div>
+                <div class="subtitle">Irritated flakey</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 3 -->
+      <section class="section hidden" id="feelQuestion" style="display:none">
+        <h1 class="title">How does it feel when you touch your skin after washing your face before products?</h1>
+        <!-- Answer Choices -->
+        <div class="container" id="question3">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure id="feel-0" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0008/8621/0596/files/dead-skin-buildup_ebac6c24-cc8f-4adc-87fd-80f718bd7b93.jpg?v=1601441738"
+                    alt="Margherita" />
+                </div>
+                <div class="subtitle">Rough and scaly</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure id="feel-1" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img src="https://anaharmony.co.uk/static/uploads/2021/10/Understanding-Your-Skin-Type.png"
+                    alt="veggie" />
+                </div>
+                <div class="subtitle">Oil in certain places, dry in other</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure id="feel-2" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img src="https://cdn-tp3.mozu.com/30113-m1/cms/files/176653e9-baa4-4f91-9f3b-60ba9765e22d"
+                    alt="Pineapple" />
+                </div>
+                <div class="subtitle">Slick and greasy or starting to feel oily</div>
+              </figure>
+            </div>
+            <!-- D -->
+            <div class="column has-text-centered">
+              <figure id="feel-3" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0007/9858/8989/articles/untitled-32_2048x.progressive.jpg?v=1563400162"
+                    alt="plain" />
+                </div>
+                <div class="subtitle">Dry to touch</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 4 -->
+      <section class="section hidden" id="sunQuestion" style="display:none">
+        <h1 class="title">How does your skin react when you spend time in the sun?
+        </h1>
+        <!-- Answer Choices -->
+        <div class="container" id="question4">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure id="sun-0" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://post.healthline.com/wp-content/uploads/2020/09/Acne_Female_Skin-1200x628-Facebook-1200x628.jpg"
+                    alt="farm house" />
+                </div>
+                <div class="subtitle">Shiny t-zone and rough patches</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure id="sun-1" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://www.shape.com/thmb/yscnhVSIFs6ASEH1HBzA9jqIqHY=/2000x1333/filters:fill(auto,1)/skin-barrier-GettyImages-1134068203-aea863a832224348ad3acc459fb32b72.jpg"
+                    alt="city apartment" />
+                </div>
+                <div class="subtitle">Radiant complexion, little to no sensitivity</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure id="sun-2" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://images.ctfassets.net/mdcr7mahi0vp/2leCw9yhdwakHukGiMFQuM/792b8289c3c95aa2052a13f741879c69/wrinkle.jpeg?w=1200&h=675&fl=progressive&q=99&fm=jpg"
+                    alt="suburban house" />
+                </div>
+                <div class="subtitle">Flaky and cracked appearance</div>
+              </figure>
+            </div>
+            <!-- D -->
+            <div class="column has-text-centered">
+              <figure id="sun-3" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://myadore.my/wp-content/uploads/2021/12/Lets-Get-To-Know-The-Best-Skincare-For-Oily-Skin-in-Malaysia.jpg"
+                    alt="mansion" />
+                </div>
+                <div class="subtitle">Intense and increased oil production</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Question 5 -->
+      <section class="section hidden" id="conditionsQuestion" style="display:none">
+        <h1 class="title">What skin conditions to find yourself facing?</h1>
+        <!-- Answer Choices -->
+        <div class="container" id="question5">
+          <div class="columns">
+            <!-- A -->
+            <div class="column has-text-centered">
+              <figure id="conditions-0" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0575/2714/0550/t/4/assets/normal-skin-insight.jpg?v=1626595483"
+                    alt="banana" />
+                </div>
+                <div class="subtitle">Little to no skin sensitivity</div>
+              </figure>
+            </div>
+            <!-- B -->
+            <div class="column has-text-centered">
+              <figure id="conditions-1" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://images.everydayhealth.com/images/skin-beauty/acne/why-youre-breaking-out-and-how-to-banish-blemishes-722x406.jpg"
+                    alt="Strawberry" />
+                </div>
+                <div class="subtitle">Mild to chronic acne breakouts</div>
+              </figure>
+            </div>
+            <!-- C -->
+            <div class="column has-text-centered">
+              <figure id="conditions-2" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://agelessglowskin.com/wp-content/uploads/2022/03/Why-Your-Sensitive-Skin-May-Be-Irritated.jpg"
+                    alt="apple" />
+                </div>
+                <div class="subtitle">Eczema or irritated skin</div>
+              </figure>
+            </div>
+            <!-- D -->
+            <div class="column has-text-centered">
+              <figure id="conditions-3" class="card-image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img src="https://www.acneeinstein.com/wp-content/uploads/2012/06/acne-dry-skin-1.jpg" alt="mango" />
+                </div>
+                <div class="subtitle">Breakouts and rough dry patches</div>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Answer 1 (-, -) -->
+      <section id="normal" class="section" style="display:none">
+        <div class="container">
+          <h1 class="title">You have a Normal skin type</h1>
+          <div class="columns">
+            <div class="column has-text-centered">
+              <h2 class="subtitle">Normal skin is essentially skin that is well balanced; it is not too dry or oily, not
+                too sensitive and has very few imperfections. Characterized by small pores, an even skin tone and soft
+                texture, normal skin is what many would consider to be the ideal skin type.</h2>
+              <figure class="image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://images-1.eucerin.com/~/media/eucerin/local/de/teaser/mainstage/trockene-haut-artikel-stages/eucerin-as-skin-types-00header.jpg?rx=0&ry=0&rw=1140&rh=608"
+                    alt="normal-skin" />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/VY2Gt1h5jCc?start=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </figure>
+              <br>
+              <button class="button is-large is-responsive"> <a href="products2.html">Browse Products</a></button>
+              <br>
+              <button class="button" onClick="window.location.reload();">Retake!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Answer 2 (-, +) -->
+      <section id="oily" class="section" style="display:none">
+        <div class="container">
+          <h1 class="title">You have an Oily Skin type</h1>
+          <div class="columns">
+            <div class="column has-text-centered">
+              <h2 class="subtitle">Oily skin type is caused by overactive sebaceous glands, producing too much sebum.
+                This condition is also known as seborrhea. Individuals with an oily skin type are more prone to certain
+                skin blemishes and skin issues, especially acne. Like most skin types, oily skin is heavily influenced
+                by genetics.</h2>
+              <figure class="image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn.shopify.com/s/files/1/0442/4430/4035/files/oily_skin_type_480x480.jpg?v=1645016972"
+                    alt="Youtube Video" />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/l330tzUoR_I?start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </figure>
+              <br>
+              <button class="button is-large is-responsive"> <a href="products2.html">Browse Products</a></button>
+              <br>
+              <button class="button" onClick="window.location.reload();">Retake!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Answer 3 (+, -) -->
+      <section id="dry" class="section" style="display:none">
+        <div class="container">
+          <h1 class="title">You have a Dry Skin type</h1>
+          <div class="columns">
+            <div class="column has-text-centered">
+              <h2 class="subtitle">'Dry' is used to describe a skin type that produces less sebum than normal skin. As a
+                result of the lack of sebum, dry skin lacks the lipids that it needs to retain moisture and build a
+                protective shield against external influences. This leads to an impaired barrier function.</h2>
+              <figure class="image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://www.cerave.com/-/media/project/loreal/brand-sites/cerave/americas/us/article_dec2020/600x400_tips_article_6.jpg"
+                    alt="Youtube Video" />
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/5cA6W2mDSA8?start=19" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </figure>
+              <br>
+              <button class="button is-large is-responsive"> <a href="products2.html">Browse Products</a></button>
+              <br>
+              <button class="button" onClick="window.location.reload();">Retake!</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Final Answer 4 (+, +) -->
+      <section id="combo" class="section" style="display:none">
+        <div class="container">
+          <h1 class="title">You have a combination of a Dry and Oily skin type</h1>
+          <div class="columns">
+            <div class="column has-text-centered">
+              <h2 class="subtitle">Combination skin is recognized as having oily skin in some areas of your face and dry
+                skin in other areas. Typically, the t-zone (forehead, nose, and chin) are more prone to oiliness and the
+                dry areas usually persist around the cheeks, jaw area, and along the hairline.</h2>
+              <figure class="image card notification has-background-light is-inline-block">
+                <div class="container">
+                  <img
+                    src="https://cdn-cf.ipsy.com/contentAsset/image/b497940b-e914-4819-b457-8843fee1c0bf/fileAsset?byInode=1"
+                    alt="Performing Artist" />
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/NF21zKcKXwI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </figure>
+              <br>
+              <section>
+                <button class="button is-large is-responsive"> <a href="products2.html">Browse Products</a></button>
+              </section>
+              <br>
+              <section>
+                <button class="button" onClick="window.location.reload();">Retake!</button>
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+
+
+</body>
+
+<footer class="footer has-background-danger-light">
+  <div class="content has-text-centered">
+    <p class="subtitle">Disclaimer‼️ We are not licensed professionals. We are here to share our passion for skincare
+      and hope you find our site helpful. -SKN Team ^_^</p>
+  </div>
+</footer>
+
+</html>
